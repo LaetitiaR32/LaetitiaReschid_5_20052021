@@ -1,0 +1,30 @@
+#camera{
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #660000;
+    width:800px;
+    height:650px;
+    position: relative;
+
+}
+
+
+#camera div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #777777;
+
+}
+
+
+#camera div img {
+    display: block;
+    margin: auto;
+    padding: 0px;
+    margin-top: 50%;
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+
+}
