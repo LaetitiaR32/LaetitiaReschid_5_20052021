@@ -12,20 +12,21 @@
 </head>
 <body>
 <header>
- <img src="./logo.png" alt='logo'></img>
+ <img src="./logo.png" alt='logo' width="190"></img>
  <nav>
-     <ul>
-         <li>Accueil</li>
-         <li>Nos cameras vintages</li>
-         <li>Mon panier</li>
+     <ul id="nav_bar">
+         <li class="under_nav">Accueil</li>
+         <li class="under_nav"> Cameras</li>
+         <li class="under_nav">Panier</li>
          <!--faire page de confirmation de commande, pour remercier l'utilisateur de sa commande */-->
      </ul>
  </nav>
 </header>
 <main>  
-
-    <h2>Le spécialiste pour vos appareils photos vintages</h2> 
-    <h3>Choisissez le vôtre !</h3>  
+    <div id="center">   
+    <h2 class="title">Le spécialiste pour vos appareils photos vintages</h2> 
+    <h3 class="subtitle">Choisissez le vôtre !</h3> 
+</div> 
 
 <div id="camera">
     <div class="camera_picture1"></div>
@@ -51,18 +52,20 @@
     <!-- titre du site au centre-->
     <h2>Orinoco</h2>
 
-    <p>Merci de nous faire confiance</p>
+    <p>Merci de nous faire confiance.</p>
     <!-- formulaire contact : JS : champs pour écrire les infos-->
     <h3>Contactez-nous !</h3>
        <p><a href="mailto:contact@orinoco.com">Contact</a></p>
 <!--en ligne en dessous du foot --> 
     <div>
         <p>Mentions légales</p>
-        <p>Conditions générales de vente</p>
      </div>
 
 </footer>
 <!--Javascript-->
+<script type="text/javascript" src="js/ajax.js"></script> 
 <script type="text/javascript" src="js/orinoco.js"></script> 
+
+
 </body>
 </html>
