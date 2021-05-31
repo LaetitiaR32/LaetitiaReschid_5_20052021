@@ -48,14 +48,14 @@ nav {
     font-weight: 500;
 }
 
-#camera{
+#cameras {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 
-#camera div {
+#cameras div {
     display: inline-block;
     width: 28%;
     height: 227px;
@@ -66,12 +66,12 @@ nav {
 }
 
 
-#camera div img {
+#cameras div img {
     display: block;
     margin: auto;
     padding: 0px;
     margin-top: 50%;
-    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    transform: translateY(-50%); 
 
 }
 
@@ -83,5 +83,3 @@ footer {
 
 
 }
-footer h3 {
-  }
