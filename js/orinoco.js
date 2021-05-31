@@ -1,4 +1,4 @@
-/* images appareil photo*/ 
+/* images appareil photo 
 let camImages =  [ 'images/vcam_1.jpg', 'vcam_2.jpg', 'vcam_3.jpg','vcam_4.jpg','vcam_5.jpg' ];
 
 function demarrage() {
@@ -8,7 +8,21 @@ function demarrage() {
     maDiv.appendChild(img);
 }  
 
-let sImages =  [ 'pierre','paul','jean'];
+let sImages =  [ 'pierre','paul','jean'];*/
+
+/*test 2*/
+
+const ul = document.getElementById('camera');
+const url = 'http://localhost:3000/api/cameras';
+
+function debut (element) {
+    return document.createElement(element);
+   }
+
+   function append(parent, el) {
+    return parent.appendChild(el);
+}
+
 
 
 
