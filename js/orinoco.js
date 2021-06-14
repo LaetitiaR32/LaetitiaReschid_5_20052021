@@ -27,6 +27,7 @@ fetch("http://localhost:3000/api/cameras") //recuperer l'info//
     });
 
 function displayProduct(product) { //déclaration de commentaire
+    let cameras = displayProduct(data);
     console.log(product);   
 }
 //for(let i = 0; displayProduct.length; i++); {   // reperter le tableau 
