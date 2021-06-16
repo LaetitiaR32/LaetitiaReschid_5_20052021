@@ -30,9 +30,9 @@ function displayProduct(products) { //déclaration de commentaire
     for (let i = 0; i < products.length; i++) {
         //  console.log(products[i].name) 
 
-
-
         //for(let i = 0; displayProduct.length; i++); {   // reperter le tableau 
+       // let section = document.createElement("section"); // création section
+
         let div = document.createElement("div");// création div
         div.classList.add("list_product");// ajout class a ma div
         let img = document.createElement("img");// création des éléments img et p dans ma div
@@ -43,6 +43,7 @@ function displayProduct(products) { //déclaration de commentaire
 
 
         //insérer les valeurs
+        img.alt = products[i].name;
         img.src = products[i].imageUrl;
         p.textContent = products[i].name;
         para.textContent = products[i].description;
@@ -51,6 +52,8 @@ function displayProduct(products) { //déclaration de commentaire
 
         //enfants 
         document.getElementById("main").appendChild(div);
+
+       // section.appendChild(div);
         div.appendChild(img); // image enfant de ma div
         div.appendChild(p);
         div.appendChild(para);
