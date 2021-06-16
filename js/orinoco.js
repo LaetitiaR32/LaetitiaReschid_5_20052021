@@ -3,10 +3,10 @@ fetch("http://localhost:3000/api/cameras") //recuperer l'info//
         return response.json()  // retourne promesse json
     }).then(function (data) { //résultat reponse .json
         console.log(data);
-        for(let i = 0; data.length; i++); 
+       
 
         try {
-            displayProduct(data)
+            displayProduct(data);
             /*  const imageUrl = data[0].imageUrl;
               const name = data[0].name;
               const description = data[0].description;
@@ -27,9 +27,10 @@ fetch("http://localhost:3000/api/cameras") //recuperer l'info//
     });
 
 function displayProduct(product) { //déclaration de commentaire
-    let cameras = displayProduct(data);
-    console.log(product);   
-}
+    let cameras = ['name','description','lenses','price'];
+    console.log(cameras)
+    for(let i = 0; cameras.length; i++); 
+
 //for(let i = 0; displayProduct.length; i++); {   // reperter le tableau 
 let div = document.createElement("div");// création div
 div.classList.add("list_product");// ajout class a ma div
@@ -37,17 +38,17 @@ let img = document.createElement("img");// création des éléments img et p dan
 let p = document.createElement("p");
 
 //insérer les valeurs
-    p.textContent = cameras[i].name;
-    p.textContent = cameras[i].description;
-    p.textContent = cameras[i].lenses;
-    p.textContent = cameras[i].price;
+    p.textContent = cameras.name;
+    p.textContent = product.description;
+    p.textContent = product.lenses;
+    p.textContent = product.price;
 
 //enfants 
 document.getElementById("main").appendChild(div);
 div.appendChild(img); // image enfant de ma div
 div.appendChild(p);
 
-
+}
 
 
 
