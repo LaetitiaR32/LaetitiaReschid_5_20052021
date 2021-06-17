@@ -40,10 +40,13 @@ main  {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 35px;
+
 
 }
 aside {
     text-align: center;
+    width: 100%;
 }
 
 .title {
@@ -67,12 +70,28 @@ aside {
 
 }
 .list_product p {
-    text-align: center;
+    padding-left: 7%;
+    margin-bottom: 15px;
+
+
+}
+.list_product .bold { /*titre*/
+ font-size: 23px;
+ font-weight: bold;
+ margin-top: 10px;
+
+}
+
+.button_click { /* Plus de détails*/
+    margin-left: 40%;
+    margin-bottom: 21px;
+    margin-top: 27px;
+
 }
 
 /* image */
  div img {
-    height: 212px;
+    height: 198px;
     width: 89%;
     padding-left: 6%;
     padding-top: 28px;
